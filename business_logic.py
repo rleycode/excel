@@ -18,28 +18,30 @@ def get_product_mapping() -> Dict[str, Dict[str, str]]:
             _product_mapping_cache = db.get_product_categories()
         except Exception as e:
             print(f"Ошибка получения категорий из БД: {e}")
-            # Fallback на статические данные
+            # Fallback на статические данные (соответствует category_mapping)
             _product_mapping_cache = {
                 "Кредо GL": {"unit": "м2", "category_id": "1156"},
-                "Монтекристо S": {"unit": "м2", "category_id": "1157"},
-                "Классик GL": {"unit": "м2", "category_id": "1158"},
-                "Модерн GL": {"unit": "м2", "category_id": "1159"},
-                "Квадро Профи GL": {"unit": "м2", "category_id": "1160"},
-                "Ламонтерра МП": {"unit": "м2", "category_id": "1161"},
-                "Ламонтерра Х МП": {"unit": "м2", "category_id": "1162"},
-                "Камея GL": {"unit": "м2", "category_id": "1163"},
-                "Квинта+GL": {"unit": "м2", "category_id": "1164"},
-                "Трамонтана S МП": {"unit": "м2", "category_id": "1165"},
-                "Профнастил С-8": {"unit": "м2", "category_id": "2001"},
-                "МП-10": {"unit": "м2", "category_id": "2002"},
-                "Профнастил GL-10": {"unit": "м2", "category_id": "2003"},
-                "C10": {"unit": "м2", "category_id": "2004"},
-                "Профнастил С10 фигурный": {"unit": "м2", "category_id": "2005"},
-                "Профнастил С-20": {"unit": "м2", "category_id": "2006"},
-                "Профнастил С-21": {"unit": "м2", "category_id": "2007"},
-                "С-44": {"unit": "м2", "category_id": "2008"},
-                "Профнастил НС-35": {"unit": "м2", "category_id": "2009"},
-                "Плоский лист": {"unit": "м2", "category_id": "2010"},
+                "Классик GL": {"unit": "м2", "category_id": "1145"},
+                "Камея GL": {"unit": "м2", "category_id": "1155"},
+                "Квинта+GL": {"unit": "м2", "category_id": "1157"},
+                "Модерн GL": {"unit": "м2", "category_id": "1144"},
+                "Квадро Профи GL": {"unit": "м2", "category_id": "1146"},
+                "Ламонтерра МП": {"unit": "м2", "category_id": "2262"},
+                "Ламонтерра Х МП": {"unit": "м2", "category_id": "2266"},
+                "Монтекристо S": {"unit": "м2", "category_id": "2263"},
+                "Монтерроса S МП": {"unit": "м2", "category_id": "2265"},
+                "Трамонтана S МП": {"unit": "м2", "category_id": "2264"},
+                "Профиль мет. тип \"Монтеррей\"": {"unit": "м2", "category_id": "2393"},
+                "Профнастил С-8": {"unit": "м2", "category_id": "2291"},
+                "Профнастил C10 фигурный": {"unit": "м2", "category_id": "2393"},
+                "Профнастил МП-10": {"unit": "м2", "category_id": "1142"},
+                "Профнастил GL-10": {"unit": "м2", "category_id": "1142"},
+                "Профнастил C10": {"unit": "м2", "category_id": "1142"},
+                "Профнастил С-20": {"unit": "м2", "category_id": "1140"},
+                "Профнастил С-21": {"unit": "м2", "category_id": "1141"},
+                "Профнастил С-44": {"unit": "м2", "category_id": "2258"},
+                "Профнастил НС-35": {"unit": "м2", "category_id": "1148"},
+                "Плоский лист": {"unit": "м2", "category_id": "1393"},
             }
     
     return _product_mapping_cache
